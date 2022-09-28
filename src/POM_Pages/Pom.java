@@ -56,7 +56,7 @@ public class Pom extends Parent {
                 myElement = driver.findElement(By.xpath("//div//button[contains(text(),'KAYDET')]"));
                 break;
             case "radio":
-                myElement =driver.findElement(By.xpath("//input[@name='shipping']//following::div[@class='radio'][2]"));
+                myElement =driver.findElement(By.xpath("//input[@value='333']/..//div"));
                 break;
 
 
@@ -110,6 +110,8 @@ public class Pom extends Parent {
 
         switch (strElement) {
             case "assertKart": myElement = driver.findElement(By.xpath("//div[contains(text(),'Kart ile ödeme')]"));break;
+            case "duzenle": myElement = driver.findElement(By.xpath("//div/a[contains(text(),'düzenle')]"));break;
+
 
         }
         ElementToVerify(myElement, text);

@@ -1,22 +1,13 @@
 package TestPages;
-
-import POM_Pages.Parent;
 import POM_Pages.Pom;
-//import POM_Pages.Pom_WebElements;
-//import POM_Pages.WB;
 import Utilities.GWD;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.time.Duration;
+
 
 public class _01_A101 extends GWD {
   /*  Uçtan uca ödeme ekranına kadar Selenium’da java dili ile chrome browser kullanarak test otomasyon ödevi yapılacak.
@@ -59,18 +50,19 @@ public class _01_A101 extends GWD {
 
         Pom.ClickPom("uyeOlmadan");
 
-        Pom.SendKeysPom("userEmail", "alibasarankara@gmail.com");
+        Pom.SendKeysPom("userEmail", "alibarara@gmail.com");
         Pom.ClickPom("devamEt");
 
         Pom.ClickPom("newAddress");
-        Pom.SendKeysPom("addressTitle", "Myhome");
-        Pom.SendKeysPom("name", "Nuri");
-        Pom.SendKeysPom("lastName", "Kuşçu");
-        Pom.SendKeysPom("phoneNumber", "5469103501");
+
+        Pom.SendKeysPom("addressTitle", "Myhome Myhome");
+        Pom.SendKeysPom("name", "Nurdan");
+        Pom.SendKeysPom("lastName", "Kuşluk");
+        Pom.SendKeysPom("phoneNumber", "5469103411");
         Pom.SelectWithIntOptionIntPom("city", 39,"childElementCount","82");
         Pom.SelectWithIntOptionIntPom("township",2,"childElementCount", "16");
         Pom.SelectWithIntOptionIntPom("district",35,"childElementCount","96" );
-        Pom.SendKeysPom("textArea", "Berkcan Berke bulvarı Dut caddesi No:4");
+        Pom.SendKeysPom("textArea", "Burak Berke bulvarı Dut caddesi No:4");
 
         Pom.ClickPom("save");
         Pom.ClickPom("radio");
